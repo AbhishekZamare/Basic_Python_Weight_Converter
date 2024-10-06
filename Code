@@ -1,0 +1,14 @@
+Weight=float(input("Enter Your Weight "))
+Unit= input("please enter unit  for killogram 'k' or in pounds'L' ")
+
+if Unit== "K":
+    Weight = Weight * 2.205
+    Unit= "lbs"
+    print(f"Your weight is : {round(Weight,2)} {Unit}")
+elif Unit=="L":
+    Weight = Weight / 2.205
+    Unit= "Kg"
+    print(f"Your weight is : {round(Weight,2)} {Unit}")
+
+else:
+    print(f"{Unit} is not valid please enter valid unit")
